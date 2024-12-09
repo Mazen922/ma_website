@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/tailwind.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      rel="stylesheet"
+    />
+    <link href="path-to-fontawesome/css/all.min.css" rel="stylesheet" />
+
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+  </head>
+  <body class="bg-black">
+    <!-- Container Space  -->
+    <div class="grid place-items-center h-screen">
+      <div
+        class="container grid grid-rows-[100px_auto_100px_repeat(2,1fr)] px-10 gap-20 mx-auto mt-4"
+      >
+        <!-- Navbar Space -->
+
+        <nav
+          class="bg-[#232323] h-20 rounded-md flex items-center justify-between"
+        >
+          <!-- Header -->
+          <header
+            class="flex items-center mx-5 text-[#8C61C0] text-xl font-bold hover:text-purple-400 hover:bg-white hover:transition-all hover:rounded-md cursor-pointer"
+          >
+            <a href="#Hero"> MAZEN AHMED</a>
+          </header>
+
+          <!-- Navigation Links (Hidden on Small Screens) -->
+          <ul
+            class="hidden lg:flex p-5 rounded-sm text-white items-center justify-between gap-10 text-xl"
+          >
+            <li>
+              <a
+                href="#project"
+                class="hover:text-[#8C61C0] transition-all"
+                id="Hero"
+                >My Projects</a
+              >
+            </li>
+            <li>
+              <a href="#About" class="hover:text-[#8C61C0] transition-all"
+                >About Me</a
+              >
+            </li>
+            <li>
+              <a href="#Contact" class="hover:text-[#8C61C0] transition-all"
+                >Contact</a
+              >
+            </li>
+          </ul>
+
+          <!-- Burger Menu (Hidden on Large Screens) -->
+          <button
+            id="burger-menu"
+            class="lg:hidden flex items-center justify-center w-10 h-10 rounded bg-gray-500 text-white focus:outline-none"
+          >
+            <div class="space-y-1">
+              <span class="block w-6 h-0.5 bg-white"></span>
+              <span class="block w-6 h-0.5 bg-white"></span>
+              <span class="block w-6 h-0.5 bg-white"></span>
+            </div>
+          </button>
+
+          <!-- Dropdown Menu (Hidden Initially) -->
+          <div
+            id="mobile-menu"
+            class="hidden absolute top-16 right-4 w-40 bg-gray-700 rounded shadow-lg text-white flex flex-col p-4"
+          >
+            <a href="#project" class="py-2 px-4 hover:bg-gray-600 rounded"
+              >My Projects</a
+            >
+            <a href="#About" class="py-2 px-4 hover:bg-gray-600 rounded"
+              >About Me</a
+            >
+            <a
+              href="#Contact"
+              class="py-2 px-4 hover:bg-gray-600 rounded transition-all scroll-smooth"
+              >Contact</a
+            >
+          </div>
+        </nav>
+
+        <!-- Hero Section  -->
+        <div
+          class="font-bold text-white py-6 px-5 leading-5 bg-[#232323] rounded-md border-2 border-[black] outline outline-2 outline-[#2C2C2C] items-center"
+        >
+          <h1 class="p-8 pl-0 leading-snug md:text-5xl lg:text-6xl text-3xl">
+            Hi, I’m Mazen Ahmed <br />
+            a <span class="text-[#8C61C0]">Frontend developer</span>.
+          </h1>
+        </div>
+
+        <h2 id="#project" class="lg:text-2xl sm:text-xl text-white">
+          MY PROJECTS
+        </h2>
+
+        <!-- Projects Space  -->
+        <!-- Project One  -->
+        <div
+          id="project"
+          class="text-white flex lg:flex-row md:flex-row basis-20 bg-[#232323] max-[425px]:flex-col border-4 border-[#2C2C2C] rounded-xl"
+        >
+          <div class="image flex shrink-0 basis-1/3">
+            <!-- Image Space  -->
+            <img
+              src="./assets/imgs/image-qr-code.png"
+              class="flex flex-1 bg-cover rounded-lg"
+              alt=""
+            />
+          </div>
+          <!-- Content Start  -->
+          <div class="content content-between gap-3 flex-1 p-5">
+            <h3 class="lg:text-3xl hover:text-[#8C61C0]">
+              <a
+                href="https://mazen922.github.io/QR-code-component/"
+                target="_blank"
+                >Frontend Mentor Challenge</a
+              >
+            </h3>
+            <br />
+            <p class="lg:text-xl text-[#DADADA]">Qr Code challenge</p>
+            <br />
+            <p class="lg:text-lg text-[#DADADA]">Role : Frontend developer</p>
+            <br />
+            <p class="text-[#DADADA]">
+              This is a challenge for a website called frontend mentor
+            </p>
+          </div>
+          <!-- Content End's -->
+        </div>
+
+        <!-- Project Two -->
+        <div
+          id="#project"
+          class="text-white flex lg:flex-row md:flex-row basis-20 bg-[#232323] max-[425px]:flex-col rounded-xl border-4 border-[#2C2C2C]"
+        >
+          <div class="image flex shrink-0 basis-1/3">
+            <!-- Image Space  -->
+            <img
+              src="./assets/imgs/Mazen.png"
+              class="flex flex-1 bg-contain rounded-lg sm:rounded-t-lg"
+              alt=""
+            />
+          </div>
+          <!-- Content Start  -->
+          <div class="content content-between gap-3 flex-1 p-5">
+            <h3 class="lg:text-3xl hover:text-[#8C61C0]">
+              <a href="https://mazen922.github.io/Portfolio/" target="_blank"
+                >Inter2Grow Challenge</a
+              >
+            </h3>
+            <br />
+            <p class="lg:text-xl text-[#DADADA]">Portfolio challenge</p>
+            <br />
+            <p class="lg:text-lg text-[#DADADA]">Role : Frontend developer</p>
+            <br />
+            <p class="text-[#DADADA]">
+              This is a challenge for a website called Inter2Grow , the
+              challenge is to turn the design that they gave me to a responsive
+              landing page .
+            </p>
+          </div>
+          <!-- Content End's -->
+        </div>
+        <!-- About Me Section -->
+        <h2 id="#About" class="lg:text-2xl sm:text-xl text-white">ABOUT ME</h2>
+        <div
+          id="About"
+          class="text-white flex lg:flex-row md:flex-row basis-20 bg-[#232323] max-[425px]:flex-col border-4 border-[#2C2C2C] rounded-md"
+        >
+          <!-- Content Start  -->
+          <div class="content content-between gap-3 flex-1 p-5">
+            <p class="text-[#DADADA]">
+              As a Frontend Developer👨🏾‍🚀, I work on creating user-friendly and
+              responsive web pages using HTML CSS javascript, and Bootstrap. I'm
+              in the last year of my bachelor's degree in computer science at Al
+              Zaiem Al Azhary University, where I learned the fundamentals of
+              programming, data structures, algorithms, and software
+              engineering. I am passionate about creating innovative and
+              impactful solutions that enhance user experience and engagement.
+              My core competencies include HTML, CSS, Javascript, and Bootstrap.
+              .
+            </p>
+          </div>
+          <!-- Content End's -->
+        </div>
+
+        <!-- Contact Section -->
+        <div
+          id="Contact"
+          class="text-white bg-[#232323] border-4 border-[#2C2C2C] rounded-xl"
+        >
+          <!-- Content Start  -->
+          <div class="content p-5">
+            <ul
+              class="grid grid-cols-[1fr_1fr] gap-10 items-center content-between justify-center"
+            >
+              <li class="flex items-center">
+                <a
+                  href="https://www.linkedin.com/in/mazen-ahmed-722a662a4/"
+                  target="_blank"
+                  class="hover:text-[#8C61C0] transition-all duration-500 text-xl flex content-between gap-2 items-center"
+                  ><i class="fa-brands fa-linkedin text-2xl pr-2"></i
+                  >linkedin</a
+                >
+              </li>
+              <li class="flex items-center">
+                <a
+                  href="https://github.com/Mazen922"
+                  target="_blank"
+                  name="github"
+                  role="link"
+                  class="hover:text-[#8C61C0] transition-all duration-500 text-xl flex content-between gap-2 items-center"
+                >
+                  <i class="fa-brands fa-square-github text-2xl"></i>
+                  Github</a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:mazen.ahmedalsnosi@gmail.com"
+                  target="_blank"
+                  class="hover:text-[#8C61C0] transition-all duration-500 text-xl flex content-between gap-2 items-center"
+                >
+                  <i class="fa-regular fa-envelope text-2xl"></i>
+                  Email</a
+                >
+              </li>
+
+              <li>
+                <a
+                  href="+971555110848"
+                  class="hover:text-[#8C61C0] transition-all duration-500 text-2xl sm:text-sm flex content-between gap-2 items-center"
+                >
+                  <i class="fa-brands fa-square-whatsapp text-2xl"></i>
+                  +971555110848</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- Content End's -->
+        </div>
+      </div>
+    </div>
+    <script>
+      // Toggle Burger Menu
+      const burgerMenu = document.getElementById("burger-menu");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      burgerMenu.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
